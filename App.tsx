@@ -63,43 +63,98 @@ export default function App() {
 }
 const styles = StyleSheet.create({
   safeArea: {
-
+    flex: 1,
+    backgroundColor: '#FFFFFF',
   },
   container: {
-
+    flex: 1,
+    paddingHorizontal: 24,
+    alignItems: 'center', // Alinha eixo y (horizontal) 
+    justifyContent: 'center', // Alinha eixo x (vertical)
   },
   header: {
-
+    alignItems: 'center',
+    marginBottom: 28,
   },
   logo: {
+    width: 72,
+    height: 72,
+    marginBottom: 10,
 
   },
   brandName: {
+    fontSize: 22,
+    fontWeight: '700',
+    color: '#000000',
+    textAlign: 'center',
+    marginBottom: 12,
 
   },
   welcomeSection: {
-
+    alignItems: 'center',
+    marginBottom: 36,
+    paddingHorizontal: 8,
   },
   title: {
-
+    fontSize: 26,
+    fontWeight: '700',
+    color: '#000000',
+    textAlign: 'center',
+    marginBottom: 12,
   },
   subtitle: {
-
+    fontSize: 15,
+    lineHeight: 22,
+    color: '#707070',
+    textAlign: 'center',
   },
   cardsRow: {
-
+    flexDirection: 'row',
+    justifyContent: 'center',
+    width: '100%',
+    gap: 14,
   },
   card: {
-
+    flex: 1,
+    maxWidth: 160,
+    backgroundColor: '#FFFFFF',
+    borderRadius: 20,
+    alignItems: 'center',
+    paddingVertical: 28,
+    paddingHorizontal: 12,
+    justifyContent: 'space-between',
+    minHeight: 200,
+    // IOS (Sombra)
+    shadowColor: '#000000',
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.08,
+    shadowRadius: 12,
+    // Android (Sombra)
+    elevation: 6
   },
   iconCircle: {
-
+    width: 72,
+    height: 72,
+    borderRadius: 36,
+    backgroundColor: '#F2F2F2',
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginBottom: 24,
   },
-  cardLabelPill: {
+  cardLabelPill: {  
+    backgroundColor: '#F2F2F2',
+    borderRadius: 25,
+    paddingVertical: 10,
+    paddingHorizontal: 14,
+    width: '100%',
+    alignItems: 'center',
 
   },
   cardLabel: {
-
+    fontSize: 14, 
+    fontWeight: '600',
+    color: '#000000',
+    textAlign: 'center',
   },
 
 });
