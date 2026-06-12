@@ -65,7 +65,7 @@ export default function HomeScreen({ navigation }: Props) {
                             <Text style={styles.cardLabel}>Para comer aqui</Text>
                         </View>
                     </TouchableOpacity>
- 
+
                     <TouchableOpacity
                         style={styles.card}
                         activeOpacity={0.85}
