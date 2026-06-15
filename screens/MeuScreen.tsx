@@ -115,7 +115,6 @@ export default function MenuScreen({ navigation }: Props) {
                                         isActive && styles.categoryPillActives
                                     ]}
                                 >
-
                                     <Text
                                         style={[
                                             styles.categoryText,
@@ -125,12 +124,41 @@ export default function MenuScreen({ navigation }: Props) {
                                         {category}
                                     </Text>
                                 </TouchableOpacity>
-
-                            )
-                        })
-                        }
-
+                            );
+                        })}
                     </ScrollView>
+                    <Text style={styles.sectionTitle}>Combos</Text>
+                    {combos.map((combo, index) => (
+                        <TouchableOpacity
+                            key={combo.id}
+                            style={[
+                                styles.productRow,
+                                index > 0 && styles.productRowDivider
+                            ]}
+                            activeOpacity={0.85}
+                            onPress={() => {
+                            }}
+                        >
+
+                            <View style={styles.productInfo}>
+                                <Text style={styles.productName}>
+                                    {combo.name}
+                                </Text>
+                                <Text style={styles.productDescription}>
+                                    {combo.description}
+                                </Text>
+                                <Text style={styles.productPrice}>
+                                    R$ {combo.price}
+                                </Text>
+                            </View>
+                            <Image
+                                source={combo.image}
+                                style={styles.productImage}
+                                resizeMode="contain"
+                            />
+                        </TouchableOpacity>
+                    
+                    ))}
                 </View>
             </ScrollView>
         </View>
