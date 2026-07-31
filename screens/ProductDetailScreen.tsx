@@ -123,7 +123,22 @@ export default function ProductDetailScreen({ navigation, route }: Props) {
             ))}
             <View style={styles.bottomSpacer} />
             </ScrollView>
+            <View
+            style = {[
+                styles.footer,
+                { paddingBottom: Math.max(insets.bottom - 8, 4) }
+            ]}
+            >
+                <TouchableOpacity
+                style={styles.addButton}
+                activeOpacity={0.85}
+                onPress={() => {}}
+                >
+                    <Text style={styles.addButtonText}>Adicionar à Sacola</Text>
+                </TouchableOpacity>
+            </View>
         </View>
+    
     )
 }
  
