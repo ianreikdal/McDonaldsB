@@ -144,62 +144,172 @@ export default function ProductDetailScreen({ navigation, route }: Props) {
  
 const styles = StyleSheet.create({
     container: {
+        flex: 1,
+        backgroundColor: '#FFFFFF',
     },
     scroll: {
+        flex: 1,
     },
     scrollContent: {
+        paddingHorizontal: 20,
+        paddingTop: 96,
+        paddingBottom: 8,
     },
     headerButton: {
+        position: 'absolute',
+        top: 48,
+        width: 40,
+        height: 40,
+        borderRadius: 20,
+        backgroundColor: '#FFFFFF',
+        alignItems: 'center',
+        justifyContent: 'center',
+        zIndex: 10,
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.15,
+        shadowRadius: 4,
+        elevation: 4,
     },
     headerButtonLeft: {
+        left: 16,
     },
     headerButtonRight: {
+        right: 16,
     },
     productImage: {
+        width: '100%',
+        height: 220,
+        marginVertical: 12,
+
     },
     brandRow: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        gap: 8,
+        marginBottom: 8,
     },
     brandLogo: {
+        width: 28,
+        height: 28, 
+        borderRadius: 6,
     },
     brandName: {
+        fontSize: 14,
+        color: '#707070',
+        fontWeight: '500',
     },
     productName: {
+        fontSize: 22,
+        fontWeight: '700',
+        color: '#000000',
     },
     priceRow: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        justifyContent: 'space-between',
+        marginVertical: 24,
     },
     price: {
+        fontSize: 22,
+        fontWeight: '700',
+        color: '#000000',
     },
     quantitySelector: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        gap: 12,
     },
     quantityButtonMinus: {
+        width: 36,
+        height: 36,
+        borderRadius: 8,
+        backgroundColor: '#F2F2F2',
+        alignItems: 'center',
+        justifyContent: 'center',
     },
     quantityButtonPlus: {
+        backgroundColor: '#DA291C',
+        alignItems: 'center',
+        justifyContent: 'center',
     },
     quantityText: {
+        fontSize: 18,
+        fontWeight: '700',
+        color: '#000000',
+        minWidth: 24,
+        textAlign: 'center',
     },
     sectionTitle: {
+        fontSize: 18,
+        fontWeight: '700',
+        color: '#000000',
+        marginBottom: 10,
     },
     aboutText: {
+        fontSize: 14,
+        color: '#707070',
+        lineHeight: 22,
+        marginBottom: 24,
     },
     ingredientsHeader: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        gap: 8,
+        marginBottom: 12,
     },
     ingredientRow: {
+        flexDirection: 'row',
+        alignItems: 'flex-start',
+        marginBottom: 8,
+        paddingLeft: 4,
     },
     bullet: {
+        fontSize: 14,
+        color: '#707070',
+        marginRight: 8,
+        lineHeight: 20,
     },
     ingredientText: {
+        flex: 1,
+        fontSize: 14,
+        color: '#707070',
+        lineHeight: 20,
     },
     bottomSpacer: {
+        height: 40,
     },
     footer: {
+        paddingHorizontal: 20,
+        paddingTop: 4,
+        backgroundColor: '#FFFFFF',
+        borderTopWidth: 1,
+        borderTopColor: '#EEEEEE',
     },
     addButton: {
+        backgroundColor: '#FFC72C',
+        borderRadius: 22,
+        paddingVertical: 12,
+        alignItems: 'center',
+        justifyContent: 'center',
     },
-    addButtonText: {
+    addButtonText: {   
+        fontSize: 15,
+        fontWeight: '700',
+        color: '#000000',
     },
     errorText: {
+        fontSize: 16,
+        textAlign: 'center',
+        marginTop: 40,
+        color: '#000000',
     },
     backLink: {
+        fontSize: 16,
+        textAlign: 'center',
+        marginTop: 16,
+        color: '#DA291C',
+        fontWeight: '600',
     },
 });
  
