@@ -13,10 +13,28 @@ import { MaterialCommunityIcons, Feather } from '@expo/vector-icons';
 import type { NativeStackScreenProps } from '@react-navigation/native-stack';
  
  
+export type ItemPedido = {
+    productId: string;
+    quantidade: number;
+};
+
 export type RootStackParamList = {
     Home: undefined;
+
     Menu: undefined;
-    ProductDetail: { productId: string };
+
+    ProductDetail: {
+        productId: string;
+    };
+
+    Sacola: undefined;
+
+    Pedidos: undefined;
+
+    PedidoFinalizado: {
+        itens: ItemPedido[];
+        total: number;
+    };
 };
  
  

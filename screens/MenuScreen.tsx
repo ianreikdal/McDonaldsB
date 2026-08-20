@@ -47,7 +47,7 @@ export default function MenuScreen({ navigation }: Props) {
                     <TouchableOpacity
                         style={[styles.headerButton, styles.headerButtonRight]}
                         activeOpacity={0.8}
-                        onPress={() => { }}
+                        onPress={() => navigation.navigate('Pedidos')}
                     >
                         <Feather name="file-text" size={20} color={'#000000'} />
                     </TouchableOpacity>
